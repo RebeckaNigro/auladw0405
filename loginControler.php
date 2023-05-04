@@ -1,9 +1,4 @@
 <?php
-//valores de logine senha desejados 
-//(futuramente, buscaremos do BD)
-const LOGIN_DESEJADO = 'alexandre';
-const SENHA_DESEJADA = '22';
-
 //Busca sessão do usuário, ou cria nova caso ainda não exista.
 session_start();
 
@@ -22,3 +17,5 @@ else{//errou
     $msg = 'Login ou senha incorretos';
     header("Location: ./view/login.php?msg=$msg");
 }
+
+?>
