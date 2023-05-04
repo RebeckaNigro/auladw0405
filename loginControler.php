@@ -1,12 +1,14 @@
 <?php
 //Busca sessão do usuário, ou cria nova caso ainda não exista.
+require('./model/utils.php');
+
 session_start();
 
 $login = $_POST['login'];
 $senha = $_POST['senha'];
 
 //acertou login e senha
-if( $login == LOGIN_DESEJADO && $senha == SENHA_DESEJADA){
+if(try2login($login, $senha)){
     /*cria entrada logado nas variáveis de sessao e armazena o login*/
     $_SESSION['logado'] = $login;
     //sucesso, redireciona para menu
