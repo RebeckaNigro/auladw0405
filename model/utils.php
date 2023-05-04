@@ -13,7 +13,7 @@ function try2login($login, $senha){
 }
 
 function acessVerify(){
-$path = $_SERVER['SERVER_NAME'].'/cookies/view/login.php';
+$path = 'http://'.$_SERVER['SERVER_NAME'].'/cookies/view/login.php';
     if ( !isset($_SESSION['logado']) ){
         header('Location: ./login.php?msg=Acesso Negado');
         exit();
