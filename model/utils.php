@@ -19,5 +19,13 @@ $path = 'http://'.$_SERVER['SERVER_NAME'].'/cookies/view/login.php';
         exit();
     }
 }
+function isPostRequest(){
+    return $_SERVER['REQUEST_METHOD'] == 'POST';
+}
+
+function isGetRequest(){
+   return $_SERVER['REQUEST_METHOD'] == 'GET';
+
+}
 
 ?>
