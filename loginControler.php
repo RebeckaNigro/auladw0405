@@ -2,7 +2,6 @@
 //Busca sessão do usuário, ou cria nova caso ainda não exista.
 require('./model/utils.php');
 
-session_start();
 
 $login = $_POST['login'];
 $senha = $_POST['senha'];

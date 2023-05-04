@@ -1,9 +1,6 @@
 <?php 
-    session_start();
-    if ( !isset($_SESSION['logado']) ){
-        header('Location: ./login.php?msg=Acesso Negado');
-        exit();
-    }
+  require('./model/utils.php');
+  acessVerify();
 ?>
 <!DOCTYPE html>
 <html lang="en">

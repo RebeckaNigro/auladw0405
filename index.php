@@ -1,5 +1,5 @@
 <?php
-session_start();
+require('./model/utils.php');
 
 //se já está logado, manda para menu
 if ( isset($_SESSION['logado'])  ){

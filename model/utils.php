@@ -4,6 +4,9 @@
 const LOGIN_DESEJADO = 'alexandre';
 const SENHA_DESEJADA = '22';
 
+session_start();
+
+
 //retorna true, caso o login e senha estejam corretos.retorna falso caso contrario//
 function try2login($login, $senha){
     return ($login == LOGIN_DESEJADO && $senha == SENHA_DESEJADA);
